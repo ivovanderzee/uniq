@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ItemList.swift
 //  unique_app
 //
 //  Created by Ivo van der Zee on 01/04/2020.
@@ -8,14 +8,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ItemList: View {
     var body: some View {
-        Text("Tap")
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ItemList_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ItemList()
     }
 }
