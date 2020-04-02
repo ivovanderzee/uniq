@@ -48,6 +48,7 @@ struct HomeView: View {
                 Spacer()
       
             BottomControls()
+                .padding(.bottom)
            
         }
        
