@@ -16,75 +16,87 @@ extension Color{
 
 struct BottomControls: View {
     var body: some View {
+        
+        
        
+    
         
         
-
+        ZStack {
             
-        
-        HStack(alignment: .center) {
+            
+            Button(action: {
+                                    
+            //button action
+                                    
+            }) {
+                                    
+                                    
+                ZStack {
+                    
+                    Image("add_button")
+                        .resizable()
+                        .renderingMode(.original)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 65, height: 65)
+                    
+                    
+                    Text("+")
+                    .foregroundColor(.white)
+                        .font(.system(size: 35, weight: .heavy))
+                        .multilineTextAlignment(.center)
+                    
+                    
+                }
+            
                 
-                VStack(alignment: .leading) {
-                        Button(action: {
-                            print("Button action")
-                            }) {
-                            Text("Gegevens")
-        
-                        }.font(.system(size: 20, weight: .heavy))
-                            .foregroundColor(Color(UIColor.label))
-        
-                        Rectangle()
-                                                 
-                        .fill(Color.buttonColor)
-                        .cornerRadius(15)
-                        .frame(width: 80, height: 5)
-                        .padding(.top, -9.0)
+            
+                
+            }
+                    
+            
+            
+            HStack {
+                
+              VStack(alignment: .leading) {
+                            Button(action: {
+                                print("Button action")
+                                }) {
+                                Text("Gegevens")
+            
+                            }.font(.system(size: 20, weight: .heavy))
+                                .foregroundColor(Color(UIColor.label))
+            
+                            Rectangle()
+                                                     
+                            .fill(Color.buttonColor)
+                            .cornerRadius(15)
+                            .frame(width: 80, height: 5)
+                            .padding(.top, -10.0)
                 }
                 
-            Spacer()
-         
-             
-            HStack(alignment: .center) {
-                Button(action: {
-                            
-                            //button action
-                            
-                        }) {
-                            Text("+")
-                                .padding(22.0)
-                                .foregroundColor(.white)
-                                .font(.system(size: 35, weight: .heavy))
-                            
-                        }
-                            .background(Color.buttonColor)
-                            .clipShape(Circle())
-                .shadow(radius: 5)
-            }
                 
-              Spacer()
-       
+                Spacer()
                 
                 VStack (alignment: .leading) {
-                    Button(action: {
-                                   print("Button action")
-                               }) {
-                                   Text("Historie")
-                    }.font(.system(size: 20, weight: .heavy))
-                        .foregroundColor(Color(UIColor.label))
-                    
-                    
-                    Rectangle()
-                                                                
-                    .fill(Color.buttonColor)
-                    .cornerRadius(15)
-                    .frame(width: 80, height: 5)
-                    .padding(.top, -9.0)
-                    .opacity(0.0)
-                }
-                
-            }.padding()
-            
-          
+                                   Button(action: {
+                                                  print("Button action")
+                                              }) {
+                                                  Text("Historie")
+                                   }.font(.system(size: 20, weight: .heavy))
+                                       .foregroundColor(Color(UIColor.label))
+                                   
+                                   
+                                   Rectangle()
+                                                                               
+                                   .fill(Color.buttonColor)
+                                   .cornerRadius(15)
+                                   .frame(width: 80, height: 5)
+                                   .padding(.top, -10.0)
+                                    
+                               }
+            }.padding(.horizontal)
+        }
 
         
         

@@ -13,30 +13,24 @@ struct QRCode: View {
     
     var body: some View {
     
-            VStack{
-            
-                HStack {
+           
                     
-                     Spacer()
+                 
                 
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+        Button(action: {}
+        
+//action of the button
+        ) {
                         
-                    Image("QR")
-            .resizable()
-            .renderingMode(.original)
-            .aspectRatio(contentMode: .fill)
-            .frame(width: 45, height: 45)
-                        .edgesIgnoringSafeArea(.bottom)
-                        
+        Image("QR")
+        .resizable()
+        .renderingMode(.original)
+        .aspectRatio(contentMode: .fill)
+        .frame(width: 35, height: 35)
                      }
                     
-                } .padding()
-                
-                Spacer()
-    
                 }
-
-        }
+        
 
 
 struct QRCode_Previews: PreviewProvider {

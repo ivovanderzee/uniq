@@ -13,19 +13,30 @@ struct NameId: View {
         
          VStack{
             
-            Text("Goedeavond, John!")
-                .font(.largeTitle)
-                .fontWeight(.regular)
+            HStack {
+                Text("Goedenavond,")
+                    .font(.title)
+                    .fontWeight(.light)
+                    .foregroundColor(.black)
+                
+                Text("Guus")
+                .font(.title)
+                    .fontWeight(.light)
                 .foregroundColor(.black)
+                
+                
+                
+                
+            }
             
-        ZStack {
+            ZStack {
             
             Image("UNIQUE_ID")
             .resizable()
             .renderingMode(.original)
             .aspectRatio(contentMode: .fill)
             .frame(width: 45, height: 45)
-                        .edgesIgnoringSafeArea(.bottom)
+            
             
             Text("8ucv4tx3kp0")
                 .font(.callout)
@@ -35,9 +46,8 @@ struct NameId: View {
         }
         .opacity(0.8)
         .cornerRadius(10.0)
-        .padding(6)
+        .padding(-15)
             
-            Spacer()
         
     }
 }

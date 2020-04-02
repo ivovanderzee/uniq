@@ -13,32 +13,30 @@ struct MenuIcon: View {
     
     var body: some View {
     
-            VStack{
+       
             
-                HStack {
-                    
-                
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+             
+            
+            Button(action: {
                         
-                    Image("Group")
+                        
+                        
+                    }) {
+                        
+                    Image("menu_icon")
             .resizable()
             .renderingMode(.original)
             .aspectRatio(contentMode: .fill)
-            .frame(width: 45, height: 45)
-                        .edgesIgnoringSafeArea(.bottom)
+            .frame(width: 31, height: 24)
+                      
                         
-                     }
-                    
-                    Spacer()
-                    
-                } .padding()
-                
-                Spacer()
-    
-                }
-
         }
-
+                        
+        }
+                  
+                
+              
+        
 
 struct MenuIcon_Previews: PreviewProvider {
     static var previews: some View {

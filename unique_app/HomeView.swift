@@ -19,48 +19,41 @@ struct HomeView: View {
     var body: some View {
         
     
-       ZStack(alignment: .bottom) {
-        Color.backgroundColor
-      .edgesIgnoringSafeArea(.all)
-        
-       
-        ZStack(alignment: .bottom) {
+      
+        VStack {
+         
+                
+            ZStack {
+                
+                Image("logo")
+                    .resizable()
+                    .renderingMode(.original)
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 92, height: 35)
+                .padding(.bottom, 20)
+                
+                
+                HStack {
+                    
+                  MenuIcon()
+                    Spacer()
+                  QRCode()
+                 
+                }.padding(.horizontal)
+            }
             
            
-            VStack{
-            Image("logo")
-            .resizable()
-            .renderingMode(.original)
-            .aspectRatio(contentMode: .fit)
-            .frame(width: 92, height: 35)
-                    .edgesIgnoringSafeArea(.bottom)
-                    Spacer()
-                    
-                    ZStack(alignment: .bottom) {
-                       
-                  
-                        
-                        Rectangle()
-                            
-                            .fill(Color.colorList)
-                            .frame(height: 611)
-                        .cornerRadius(15)
-                    }
-                    
                 
-               
-                     
-            }.edgesIgnoringSafeArea(.bottom)
-            
-            
+                NameId()
+                Spacer()
+      
             BottomControls()
-                .padding(.bottom, -13.0)
-            
-            
+           
         }
+       
         
-        }
         
+       
          
             
         
