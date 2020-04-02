@@ -24,35 +24,41 @@ struct HomeView: View {
       .edgesIgnoringSafeArea(.all)
         
        
-            VStack{
-                
-        Image("logo")
-        .resizable()
-        .renderingMode(.original)
-        .aspectRatio(contentMode: .fit)
-        .frame(width: 92, height: 35)
-                .edgesIgnoringSafeArea(.bottom)
-                Spacer()
-                
-                
-          
-        
-                ZStack(alignment: .bottom) {
-                    
-                    Rectangle()
-                        
-                        .fill(Color.colorList)
-                        .frame(height: 550)
-                    .cornerRadius(15)
-                }
-        
-                        
-            
-            }.edgesIgnoringSafeArea(.bottom)
-        
+        ZStack(alignment: .bottom) {
             
            
-
+            VStack{
+            Image("logo")
+            .resizable()
+            .renderingMode(.original)
+            .aspectRatio(contentMode: .fit)
+            .frame(width: 92, height: 35)
+                    .edgesIgnoringSafeArea(.bottom)
+                    Spacer()
+                    
+                    ZStack(alignment: .bottom) {
+                       
+                  
+                        
+                        Rectangle()
+                            
+                            .fill(Color.colorList)
+                            .frame(height: 611)
+                        .cornerRadius(15)
+                    }
+                    
+                
+               
+                     
+            }.edgesIgnoringSafeArea(.bottom)
+            
+            
+            BottomControls()
+                .padding(.bottom, -13.0)
+            
+            
+        }
+        
         }
         
          
