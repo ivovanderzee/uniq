@@ -21,7 +21,7 @@ struct NameId: View {
                 
                 Text("Guus")
                 .font(.title)
-                    .fontWeight(.light)
+                .fontWeight(.light)
                 .foregroundColor(Color(UIColor.label))
                 
                 
