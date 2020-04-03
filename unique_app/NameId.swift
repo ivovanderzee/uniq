@@ -17,12 +17,12 @@ struct NameId: View {
                 Text("Goedenavond,")
                     .font(.title)
                     .fontWeight(.light)
-                    .foregroundColor(.black)
+                    .foregroundColor(Color(UIColor.label))
                 
                 Text("Guus")
                 .font(.title)
                     .fontWeight(.light)
-                .foregroundColor(.black)
+                .foregroundColor(Color(UIColor.label))
                 
                 
                 
