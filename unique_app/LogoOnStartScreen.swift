@@ -2,7 +2,7 @@
 //  LogoOnStartScreen.swift
 //  unique_app
 //
-//  Created by Ivo van der Zee on 03/04/2020.
+//  Created by Xandor Naus on 03/04/2020.
 //  Copyright © 2020 Validata. All rights reserved.
 //
 
@@ -10,7 +10,16 @@ import SwiftUI
 
 struct LogoOnStartScreen: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+           ZStack {
+               
+               Image("logo")
+                   .resizable()
+                   .renderingMode(.original)
+                   .aspectRatio(contentMode: .fit)
+                   .frame(width: 100, height: 45
+               )
+                .padding([.top, .leading, .bottom], 20)
     }
 }
 
@@ -19,3 +28,7 @@ struct LogoOnStartScreen_Previews: PreviewProvider {
         LogoOnStartScreen()
     }
 }
+
+}
+
+
