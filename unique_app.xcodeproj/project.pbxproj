@@ -12,6 +12,7 @@
 		C23B35AA243737E2000A8313 /* Numpad.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23B35A9243737E2000A8313 /* Numpad.swift */; };
 		C23B35AC243737FE000A8313 /* UserInputCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23B35AB243737FE000A8313 /* UserInputCode.swift */; };
 		C23B35AE2437380D000A8313 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23B35AD2437380D000A8313 /* LoginScreen.swift */; };
+		C23B35C6243B8B52000A8313 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23B35C2243B8B52000A8313 /* Files.swift */; };
 		C2EE1E4C2434C33D0062A944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE1E4B2434C33D0062A944 /* AppDelegate.swift */; };
 		C2EE1E4E2434C33D0062A944 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE1E4D2434C33D0062A944 /* SceneDelegate.swift */; };
 		C2EE1E502434C33D0062A944 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE1E4F2434C33D0062A944 /* HomeView.swift */; };
@@ -23,8 +24,6 @@
 		C2EE1E7E24350F230062A944 /* BottomControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE1E7D24350F230062A944 /* BottomControls.swift */; };
 		C2EE1E8024351C610062A944 /* MenuIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE1E7F24351C610062A944 /* MenuIcon.swift */; };
 		C2EE1E8224351C790062A944 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE1E8124351C790062A944 /* QRCode.swift */; };
-		C2EE1E8424351C8E0062A944 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE1E8324351C8D0062A944 /* Item.swift */; };
-		C2EE1E8624351CC80062A944 /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE1E8524351CC80062A944 /* ItemList.swift */; };
 		C2EE1E8824351E030062A944 /* NameId.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE1E8724351E030062A944 /* NameId.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +50,7 @@
 		C23B35A9243737E2000A8313 /* Numpad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numpad.swift; sourceTree = "<group>"; };
 		C23B35AB243737FE000A8313 /* UserInputCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputCode.swift; sourceTree = "<group>"; };
 		C23B35AD2437380D000A8313 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		C23B35C2243B8B52000A8313 /* Files.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
 		C2EE1E482434C33D0062A944 /* unique_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unique_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2EE1E4B2434C33D0062A944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2EE1E4D2434C33D0062A944 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,8 +68,6 @@
 		C2EE1E7D24350F230062A944 /* BottomControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomControls.swift; sourceTree = "<group>"; };
 		C2EE1E7F24351C610062A944 /* MenuIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuIcon.swift; sourceTree = "<group>"; };
 		C2EE1E8124351C790062A944 /* QRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
-		C2EE1E8324351C8D0062A944 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		C2EE1E8524351CC80062A944 /* ItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList.swift; sourceTree = "<group>"; };
 		C2EE1E8724351E030062A944 /* NameId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameId.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,9 +122,7 @@
 				C2EE1E7D24350F230062A944 /* BottomControls.swift */,
 				C2EE1E7F24351C610062A944 /* MenuIcon.swift */,
 				C2EE1E8124351C790062A944 /* QRCode.swift */,
-				C2EE1E8324351C8D0062A944 /* Item.swift */,
 				C2EE1E8724351E030062A944 /* NameId.swift */,
-				C2EE1E8524351CC80062A944 /* ItemList.swift */,
 				C2EE1E4B2434C33D0062A944 /* AppDelegate.swift */,
 				C2EE1E4D2434C33D0062A944 /* SceneDelegate.swift */,
 				C2EE1E4F2434C33D0062A944 /* HomeView.swift */,
@@ -137,6 +133,7 @@
 				C23B35AD2437380D000A8313 /* LoginScreen.swift */,
 				C23B35AB243737FE000A8313 /* UserInputCode.swift */,
 				C2EE1E562434C33F0062A944 /* LaunchScreen.storyboard */,
+				C23B35C2243B8B52000A8313 /* Files.swift */,
 				C2EE1E592434C33F0062A944 /* Info.plist */,
 				C2EE1E532434C33F0062A944 /* Preview Content */,
 			);
@@ -301,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2EE1E8024351C610062A944 /* MenuIcon.swift in Sources */,
+				C23B35C6243B8B52000A8313 /* Files.swift in Sources */,
 				C2EE1E7E24350F230062A944 /* BottomControls.swift in Sources */,
 				C23B35AC243737FE000A8313 /* UserInputCode.swift in Sources */,
 				C2EE1E4C2434C33D0062A944 /* AppDelegate.swift in Sources */,
@@ -308,8 +306,6 @@
 				C23B35AA243737E2000A8313 /* Numpad.swift in Sources */,
 				C2EE1E4E2434C33D0062A944 /* SceneDelegate.swift in Sources */,
 				C2EE1E8824351E030062A944 /* NameId.swift in Sources */,
-				C2EE1E8624351CC80062A944 /* ItemList.swift in Sources */,
-				C2EE1E8424351C8E0062A944 /* Item.swift in Sources */,
 				C2EE1E502434C33D0062A944 /* HomeView.swift in Sources */,
 				C23B35AE2437380D000A8313 /* LoginScreen.swift in Sources */,
 				C2EE1E8224351C790062A944 /* QRCode.swift in Sources */,
@@ -483,6 +479,7 @@
 				DEVELOPMENT_TEAM = QKKPLHJBYM;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = unique_app/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -503,6 +500,7 @@
 				DEVELOPMENT_TEAM = QKKPLHJBYM;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = unique_app/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

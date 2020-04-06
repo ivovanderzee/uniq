@@ -11,6 +11,9 @@ import SwiftUI
 extension Color{
     
    static let buttonColor = Color("button")
+    static let bottomGradient1 = Color("bottomGradient1")
+    static let bottomGradient2 = Color("bottomGradient2")
+    
 
 }
 
@@ -25,8 +28,14 @@ struct BottomControls: View {
         ZStack {
             
             
+            Rectangle()
+                .fill(LinearGradient(gradient: .init(colors: [Color.bottomGradient1,Color.bottomGradient2]), startPoint: .bottom, endPoint: .top))
+                .frame(width: UIScreen.main.bounds.width, height: 140)
+               
+            
+            
             Button(action: {
-                                    
+                                
             //button action
                                     
             }) {
