@@ -47,35 +47,45 @@ struct Verification : View {
     
     var body : some View{
             
-            VStack{
-                
-                
-                
+        
             
-                
-                LogoOnStartScreen().padding(.top, 100.0)
-                
-                
-                Spacer()
-                
-                HStack{
-                              
+          
+            
+        ZStack {
+            
+            
+            
+            VStack{
+                        
                     
-                    ForEach(code,id: \.self){i in
+                        LogoOnStartScreen().padding(.top, 100.0)
+                        
+                        
+                        Spacer()
+                        
+                        HStack{
+                                      
+                            
+                            ForEach(code,id: \.self){i in
+                                          
+                                          Text(i).font(.title).fontWeight(.light)
+                                      }.foregroundColor(Color(UIColor.label))
+                                      
+                        }.frame(height: 20)
+                        
+                        Spacer()
                                   
-                                  Text(i).font(.title).fontWeight(.light)
-                              }.foregroundColor(Color(UIColor.label))
-                              
-                }.frame(height: 20)
-                
-                Spacer()
-                          
-                          NumberPad(codes: $code)
-                
-         
-    Spacer()
-                
+                                  NumberPad(codes: $code)
+                        
+                 
+            Spacer()
+                        
             }.frame(width: UIScreen.main.bounds.width).background(Color.backgroundColor).edgesIgnoringSafeArea(.all)
+        
+            Particles().opacity(0.5)
+        
+        }
+        
             
         }
 }
