@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct Numpad: View {
     
     @State var status = false
     
@@ -34,9 +34,7 @@ struct ContentView: View {
                     self.status = true
                 }
             }
-            
-        }.preferredColorScheme(self.status ? .light : .dark)
-        .animation(.spring())
+        }
         
     }
 }
@@ -57,30 +55,24 @@ struct Verification : View {
         
         VStack{
             
-            Spacer()
-            
-            Text("Enter Verification Code").font(.title)
-            
-            HStack(spacing: 20){
-                
-                ForEach(code,id: \.self){i in
-                    
-                    Text(i).font(.title).fontWeight(.semibold)
-                }
-                
-            }.padding(.vertical)
-            
-            Spacer()
-            
-            NumberPad(codes: $code)
+       HStack(spacing: 20){
+                          
+                          ForEach(code,id: \.self){i in
+                              
+                              Text(i).font(.title).fontWeight(.light)
+                          }.foregroundColor(Color(UIColor.label))
+                          
+                  }.padding(.vertical)
+                      
+                      NumberPad(codes: $code).padding(.top, 75.0)
             
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Numpad_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Numpad()
     }
 }
 
@@ -112,8 +104,6 @@ struct NumberPad : View {
                                     
                                     print(self.getCode())
                                     
-                                    // use this code for verification and post the notification when the code is verified....
-                                    
                                     NotificationCenter.default.post(name: NSNotification.Name("Success"), object: nil)
                                     
                                     self.codes.removeAll()
@@ -128,7 +118,7 @@ struct NumberPad : View {
                             }
                             else{
                                 
-                                Text(j.value).font(.title).fontWeight(.semibold).padding(.vertical)
+                                Text(j.value).font(.largeTitle).fontWeight(.light).padding(.vertical)
                             }
                             
                             
@@ -138,12 +128,12 @@ struct NumberPad : View {
                 
             }
             
-        }.foregroundColor(.white)
+        }.foregroundColor(Color(UIColor.label))
     }
     
     func getspacing()->CGFloat{
         
-        return UIScreen.main.bounds.width / 3
+        return UIScreen.main.bounds.width / 4.5
     }
     
     func getCode()->String{
@@ -180,5 +170,6 @@ var datas = [
 type(id: 0, row: [row(id: 0, value: " 1"),row(id: 1, value: "2"),row(id: 2, value: "3")]),
 type(id: 1, row: [row(id: 0, value: "4"),row(id: 1, value: "5"),row(id: 2, value: "6")]),
 type(id: 2, row: [row(id: 0, value: "7"),row(id: 1, value: "8"),row(id: 2, value: "9")]),
-type(id: 3, row: [row(id: 0, value: "delete.left.fill"),row(id: 1, value: "0")])
+type(id: 3, row: [row(id: 0, value: "0"),row(id: 1, value: "0"), row(id: 2, value: "delete.left.fill")])
 ]
+

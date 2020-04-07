@@ -10,7 +10,6 @@
 		C23B35A6243737B4000A8313 /* SubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23B35A5243737B4000A8313 /* SubmitButton.swift */; };
 		C23B35A8243737D3000A8313 /* LogoOnStartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23B35A7243737D3000A8313 /* LogoOnStartScreen.swift */; };
 		C23B35AA243737E2000A8313 /* Numpad.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23B35A9243737E2000A8313 /* Numpad.swift */; };
-		C23B35AC243737FE000A8313 /* UserInputCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23B35AB243737FE000A8313 /* UserInputCode.swift */; };
 		C23B35AE2437380D000A8313 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23B35AD2437380D000A8313 /* LoginScreen.swift */; };
 		C23B35C6243B8B52000A8313 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23B35C2243B8B52000A8313 /* Files.swift */; };
 		C2EE1E4C2434C33D0062A944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE1E4B2434C33D0062A944 /* AppDelegate.swift */; };
@@ -47,8 +46,7 @@
 /* Begin PBXFileReference section */
 		C23B35A5243737B4000A8313 /* SubmitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitButton.swift; sourceTree = "<group>"; };
 		C23B35A7243737D3000A8313 /* LogoOnStartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoOnStartScreen.swift; sourceTree = "<group>"; };
-		C23B35A9243737E2000A8313 /* Numpad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numpad.swift; sourceTree = "<group>"; };
-		C23B35AB243737FE000A8313 /* UserInputCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputCode.swift; sourceTree = "<group>"; };
+		C23B35A9243737E2000A8313 /* Numpad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numpad.swift; sourceTree = "<group>"; tabWidth = 4; };
 		C23B35AD2437380D000A8313 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		C23B35C2243B8B52000A8313 /* Files.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
 		C2EE1E482434C33D0062A944 /* unique_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unique_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,7 +129,6 @@
 				C23B35A7243737D3000A8313 /* LogoOnStartScreen.swift */,
 				C23B35A9243737E2000A8313 /* Numpad.swift */,
 				C23B35AD2437380D000A8313 /* LoginScreen.swift */,
-				C23B35AB243737FE000A8313 /* UserInputCode.swift */,
 				C2EE1E562434C33F0062A944 /* LaunchScreen.storyboard */,
 				C23B35C2243B8B52000A8313 /* Files.swift */,
 				C2EE1E592434C33F0062A944 /* Info.plist */,
@@ -300,7 +297,6 @@
 				C2EE1E8024351C610062A944 /* MenuIcon.swift in Sources */,
 				C23B35C6243B8B52000A8313 /* Files.swift in Sources */,
 				C2EE1E7E24350F230062A944 /* BottomControls.swift in Sources */,
-				C23B35AC243737FE000A8313 /* UserInputCode.swift in Sources */,
 				C2EE1E4C2434C33D0062A944 /* AppDelegate.swift in Sources */,
 				C23B35A8243737D3000A8313 /* LogoOnStartScreen.swift in Sources */,
 				C23B35AA243737E2000A8313 /* Numpad.swift in Sources */,

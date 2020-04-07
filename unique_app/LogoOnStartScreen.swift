@@ -17,9 +17,8 @@ struct LogoOnStartScreen: View {
                    .resizable()
                    .renderingMode(.original)
                    .aspectRatio(contentMode: .fit)
-                   .frame(width: 100, height: 45
+                   .frame(width: 170, height: 70
                )
-                .padding([.top, .leading, .bottom], 20)
     }
 }
 
