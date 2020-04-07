@@ -29,9 +29,10 @@ struct SubmitButton: View {
                 Rectangle()
                               .fill(LinearGradient(gradient: .init(colors: [Color.colorGreen,Color.colorBlue]), startPoint: .leading, endPoint: .trailing))
                                          .frame(width: UIScreen.main.bounds.width, height: 90)
+                    .cornerRadius(10)
                                   
 
-                Text("Bevestigen")
+                Text("Beginnen")
                     .font(.title)
                     .fontWeight(.semibold)
                     .padding([.leading, .trailing, .bottom])

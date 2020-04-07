@@ -11,7 +11,25 @@ import SwiftUI
 struct StartScreen: View {
     var body: some View {
         
-       Text("test")
+      
+        ZStack {
+            
+           
+            
+            VStack(alignment: .center, spacing: -5) {
+                
+                
+                LogoOnStartScreen().padding(.top, 230)
+                Text("Veilig gegeven versturen")
+                
+                 Spacer()
+                
+                Text("Tip: beveilig je accounts altijd met een two way verification").frame(width: 240).padding(.bottom, 30.0)
+                SubmitButton()
+            }.background(Color.backgroundColor).edgesIgnoringSafeArea(.all)
+        
+                Particles()
+        }
         
     }
 }
