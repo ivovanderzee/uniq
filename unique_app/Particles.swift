@@ -14,9 +14,12 @@ struct Particles: View {
    
                    
         Image("PARTICLES")
+            
             .renderingMode(.original)
             .resizable()
+            .opacity(0.5)
             .aspectRatio(contentMode: .fit)
+            
        
                        
                    

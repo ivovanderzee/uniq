@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
         // Create the SwiftUI view that provides the window contents.
-        let home = LoginScreen()
+        let startView = StartScreen()
         
         
         
@@ -31,7 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             
-            window.rootViewController = UIHostingController(rootView: home)
+            window.rootViewController = UIHostingController(rootView: startView)
             self.window = window
             window.makeKeyAndVisible()
         }

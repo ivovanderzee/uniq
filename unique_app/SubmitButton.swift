@@ -16,21 +16,40 @@ extension Color{
 
 }
 
+
+
 struct SubmitButton: View {
+    
+
+    
       var body: some View {
             
-          Button(action: {
+     
+      
+        
+        Button(action: {
+            
+    
+         
             
               }) {
+                
+                NavigationLink(destination: LoginScreen().navigationBarBackButtonHidden(true)
+                .navigationBarHidden(true)) {
+               
         
                 ZStack {
-                       
-                 
+                    
+                    
+                    
+                    
                 Rectangle()
                               .fill(LinearGradient(gradient: .init(colors: [Color.colorGreen,Color.colorBlue]), startPoint: .leading, endPoint: .trailing))
                                          .frame(width: UIScreen.main.bounds.width, height: 90)
                     .cornerRadius(10)
                                   
+                    
+                
 
                 Text("Beginnen")
                     .font(.title)
@@ -39,14 +58,19 @@ struct SubmitButton: View {
                     .foregroundColor(Color.white)
                 
                 
-                
-              
-                }.opacity(0.8)
+                    }
+            
+                    
+                }.opacity(0.7)
                     .shadow(radius: 10)
+                
                    
     
         }
-}
+            
+     
+        
+    }
 
 struct SubmitButton_Previews: PreviewProvider {
     static var previews: some View {

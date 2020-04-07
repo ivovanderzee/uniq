@@ -11,11 +11,13 @@ import SwiftUI
 struct StartScreen: View {
     var body: some View {
         
+        NavigationView{
+   
       
         ZStack {
-            
-           
-            
+        
+               
+          
             VStack(alignment: .center, spacing: -5) {
                 
                 
@@ -25,13 +27,23 @@ struct StartScreen: View {
                  Spacer()
                 
                 Text("Tip: beveilig je accounts altijd met een two way verification").frame(width: 240).padding(.bottom, 30.0)
+                
+                
+                
                 SubmitButton()
+                    
+                
             }.background(Color.backgroundColor).edgesIgnoringSafeArea(.all)
         
-                Particles()
+            Particles().padding(.bottom, 80.0)
+           
+               
         }
-        
+         
+        }.navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
     }
+    
 }
 
 struct StartScreen_Previews: PreviewProvider {

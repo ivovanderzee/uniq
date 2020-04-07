@@ -53,7 +53,7 @@ struct Verification : View {
             
         ZStack {
             
-            
+           
             
             VStack{
                         
@@ -82,6 +82,8 @@ struct Verification : View {
                         
             }.frame(width: UIScreen.main.bounds.width).background(Color.backgroundColor).edgesIgnoringSafeArea(.all)
         
+                
+            
             Particles().opacity(0.5)
         
         }
