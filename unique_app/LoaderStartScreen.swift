@@ -1,5 +1,5 @@
 //
-//  StartScreen.swift
+//  LoaderStartScreen.swift
 //  unique_app
 //
 //  Created by Xandor Naus on 07/04/2020.
@@ -8,17 +8,14 @@
 
 import SwiftUI
 
-struct StartScreen: View {
+struct LoaderStartScreen: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct StartScreen_Previews: PreviewProvider {
+struct LoaderStartScreen_Previews: PreviewProvider {
     static var previews: some View {
         StartScreen()
     }
-
-
 }
-

@@ -46,38 +46,38 @@ struct Verification : View {
    
     
     var body : some View{
-        
-        VStack{
             
-            
-            
-        
-            
-            LogoOnStartScreen().padding(.top, 100.0)
-            
-            
-            Spacer()
-            
-            HStack{
-                          
+            VStack{
                 
-                ForEach(code,id: \.self){i in
+                
+                
+            
+                
+                LogoOnStartScreen().padding(.top, 100.0)
+                
+                
+                Spacer()
+                
+                HStack{
                               
-                              Text(i).font(.title).fontWeight(.light)
-                          }.foregroundColor(Color(UIColor.label))
+                    
+                    ForEach(code,id: \.self){i in
+                                  
+                                  Text(i).font(.title).fontWeight(.light)
+                              }.foregroundColor(Color(UIColor.label))
+                              
+                }.frame(height: 20)
+                
+                Spacer()
                           
-            }.frame(height: 20)
+                          NumberPad(codes: $code)
+                
+         
+    Spacer()
+                
+            }.frame(width: UIScreen.main.bounds.width).background(Color.backgroundColor).edgesIgnoringSafeArea(.all)
             
-            Spacer()
-                      
-                      NumberPad(codes: $code)
-            
-     
-Spacer()
-            
-        }.frame(width: UIScreen.main.bounds.width).background(Color.backgroundColor).edgesIgnoringSafeArea(.all)
-        
-    }
+        }
 }
 struct LoginScreen_Previews: PreviewProvider {
     static var previews: some View {
