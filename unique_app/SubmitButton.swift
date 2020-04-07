@@ -8,6 +8,14 @@
 
 import SwiftUI
 
+extension Color{
+    
+   static let colorGreen = Color("colorGreen")
+    static let colorBlue = Color("colorBlue")
+    
+
+}
+
 struct SubmitButton: View {
       var body: some View {
             
@@ -15,26 +23,26 @@ struct SubmitButton: View {
             
               }) {
         
-             ZStack {
+                ZStack {
                        
-                       Image("CONFIRM_BTN")
-                       .resizable()
-                       .renderingMode(.original)
-                       .aspectRatio(contentMode: .fill)
-                        .padding()
-                        .frame(width: 445, height: 100)
-                
+                 
+                Rectangle()
+                              .fill(LinearGradient(gradient: .init(colors: [Color.colorGreen,Color.colorBlue]), startPoint: .leading, endPoint: .trailing))
+                                         .frame(width: UIScreen.main.bounds.width, height: 90)
+                                  
 
                 Text("Bevestigen")
                     .font(.title)
                     .fontWeight(.semibold)
-                    .padding([.top, .leading, .trailing])
-                    .foregroundColor(.white)
-                    
-                   }
-                   .opacity(0.8)
-                   .cornerRadius(10.0)
-                   .padding(-15)
+                    .padding([.leading, .trailing, .bottom])
+                    .foregroundColor(Color.white)
+                
+                
+                
+              
+                }.opacity(0.8)
+                    .shadow(radius: 10)
+                   
     
         }
 }
