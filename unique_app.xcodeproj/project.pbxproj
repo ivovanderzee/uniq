@@ -13,6 +13,7 @@
 		C23B35A8243737D3000A8313 /* LogoOnStartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23B35A7243737D3000A8313 /* LogoOnStartScreen.swift */; };
 		C23B35AA243737E2000A8313 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23B35A9243737E2000A8313 /* LoginScreen.swift */; };
 		C23B35C6243B8B52000A8313 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23B35C2243B8B52000A8313 /* Files.swift */; };
+		C23B35C9243D23A3000A8313 /* NavigationButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23B35C8243D23A3000A8313 /* NavigationButtons.swift */; };
 		C2EE1E4C2434C33D0062A944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE1E4B2434C33D0062A944 /* AppDelegate.swift */; };
 		C2EE1E4E2434C33D0062A944 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE1E4D2434C33D0062A944 /* SceneDelegate.swift */; };
 		C2EE1E502434C33D0062A944 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE1E4F2434C33D0062A944 /* HomeView.swift */; };
@@ -51,6 +52,7 @@
 		C23B35A7243737D3000A8313 /* LogoOnStartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoOnStartScreen.swift; sourceTree = "<group>"; };
 		C23B35A9243737E2000A8313 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; tabWidth = 4; };
 		C23B35C2243B8B52000A8313 /* Files.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
+		C23B35C8243D23A3000A8313 /* NavigationButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButtons.swift; sourceTree = "<group>"; };
 		C2EE1E482434C33D0062A944 /* unique_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unique_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2EE1E4B2434C33D0062A944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2EE1E4D2434C33D0062A944 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				C2EE1E4B2434C33D0062A944 /* AppDelegate.swift */,
 				C2EE1E4D2434C33D0062A944 /* SceneDelegate.swift */,
 				C2EE1E4F2434C33D0062A944 /* HomeView.swift */,
+				C23B35C8243D23A3000A8313 /* NavigationButtons.swift */,
 				C2EE1E512434C33F0062A944 /* Assets.xcassets */,
 				C23B35A5243737B4000A8313 /* SubmitButton.swift */,
 				C23B35A7243737D3000A8313 /* LogoOnStartScreen.swift */,
@@ -300,6 +303,7 @@
 				60389A02243CC37B00193BC4 /* Particles.swift in Sources */,
 				C2EE1E8024351C610062A944 /* MenuIcon.swift in Sources */,
 				C23B35C6243B8B52000A8313 /* Files.swift in Sources */,
+				C23B35C9243D23A3000A8313 /* NavigationButtons.swift in Sources */,
 				C2EE1E7E24350F230062A944 /* BottomControls.swift in Sources */,
 				C2EE1E4C2434C33D0062A944 /* AppDelegate.swift in Sources */,
 				603899FE243CBE1300193BC4 /* StartScreen.swift in Sources */,

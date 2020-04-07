@@ -57,8 +57,11 @@ struct Verification : View {
             
             VStack{
                         
-                    
-                        LogoOnStartScreen().padding(.top, 100.0)
+                HStack {
+                    Spacer()
+                    QRCode().padding(.horizontal, 25.0)
+                }.padding(.top, 40.0)
+                LogoOnStartScreen().padding(.top, 60.0)
                         
                         
                         Spacer()
@@ -75,7 +78,7 @@ struct Verification : View {
                         
                         Spacer()
                                   
-                                  NumberPad(codes: $code)
+                NumberPad(codes: $code).padding(.bottom, 40.0)
                         
                  
             Spacer()

@@ -14,12 +14,12 @@ struct NameId: View {
          VStack{
             
             HStack {
-                Text("Goedenavond,")
+                Text("Goedemorgen,")
                     .font(.title)
                     .fontWeight(.light)
                     .foregroundColor(Color(UIColor.label))
                 
-                Text("Guus")
+                Text("Ivo")
                 .font(.title)
                 .fontWeight(.light)
                 .foregroundColor(Color(UIColor.label))
