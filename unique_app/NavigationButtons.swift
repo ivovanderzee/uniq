@@ -22,6 +22,7 @@ struct NavigationButtons: View {
                           
                           
                           Text("Vorige").foregroundColor(Color.white)
+                            .font(.headline)
             }.opacity(0.8)
             
             
@@ -32,7 +33,7 @@ struct NavigationButtons: View {
                     .cornerRadius(40)
                 
                 
-                Text("Volgende").foregroundColor(Color.white)
+                Text("Volgende").foregroundColor(Color.white).font(.headline)
             }
         }
     }
