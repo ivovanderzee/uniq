@@ -34,6 +34,7 @@ struct NavigationButtons: View {
                 
                 
                 Text("Volgende").foregroundColor(Color.white).font(.headline)
+                
             }
         }
     }
