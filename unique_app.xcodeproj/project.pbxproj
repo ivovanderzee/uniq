@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		603899FE243CBE1300193BC4 /* StartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603899FD243CBE1300193BC4 /* StartScreen.swift */; };
 		60389A02243CC37B00193BC4 /* Particles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60389A01243CC37B00193BC4 /* Particles.swift */; };
+		6057B5ED243DE377008A5825 /* LoaderStartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6057B5EC243DE377008A5825 /* LoaderStartScreen.swift */; };
 		C23B35A6243737B4000A8313 /* SubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23B35A5243737B4000A8313 /* SubmitButton.swift */; };
 		C23B35A8243737D3000A8313 /* LogoOnStartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23B35A7243737D3000A8313 /* LogoOnStartScreen.swift */; };
 		C23B35AA243737E2000A8313 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23B35A9243737E2000A8313 /* LoginScreen.swift */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		603899FD243CBE1300193BC4 /* StartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreen.swift; sourceTree = "<group>"; };
 		60389A01243CC37B00193BC4 /* Particles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Particles.swift; sourceTree = "<group>"; };
+		6057B5EC243DE377008A5825 /* LoaderStartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderStartScreen.swift; sourceTree = "<group>"; };
 		C23B35A5243737B4000A8313 /* SubmitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitButton.swift; sourceTree = "<group>"; };
 		C23B35A7243737D3000A8313 /* LogoOnStartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoOnStartScreen.swift; sourceTree = "<group>"; };
 		C23B35A9243737E2000A8313 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; tabWidth = 4; };
@@ -145,6 +147,7 @@
 				C2EE1E562434C33F0062A944 /* LaunchScreen.storyboard */,
 				C23B35C2243B8B52000A8313 /* Files.swift */,
 				603899FD243CBE1300193BC4 /* StartScreen.swift */,
+				6057B5EC243DE377008A5825 /* LoaderStartScreen.swift */,
 				60389A01243CC37B00193BC4 /* Particles.swift */,
 				C2EE1E592434C33F0062A944 /* Info.plist */,
 				C2EE1E532434C33F0062A944 /* Preview Content */,
@@ -310,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60389A02243CC37B00193BC4 /* Particles.swift in Sources */,
+				6057B5ED243DE377008A5825 /* LoaderStartScreen.swift in Sources */,
 				C2EE1E8024351C610062A944 /* MenuIcon.swift in Sources */,
 				C23B35CD243D2D6E000A8313 /* UserInputField.swift in Sources */,
 				C23B35C6243B8B52000A8313 /* Files.swift in Sources */,

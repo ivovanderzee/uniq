@@ -24,9 +24,17 @@ struct StartScreen: View {
                 LogoOnStartScreen().padding(.top, 230)
                 Text("Veilig gegeven versturen")
                 
+                
+                   Spacer()
+            
+                         LoaderStartScreen()
+                .padding(.bottom, 130.0)
+                
+        
                  Spacer()
                 
                 Text("Tip: beveilig je accounts altijd met een two way verification").frame(width: 240).padding(.bottom, 30.0)
+                
                 
                 
                 
