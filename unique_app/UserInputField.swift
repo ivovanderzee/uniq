@@ -11,12 +11,13 @@ import SwiftUI
 struct UserInputField: View {
     
     @State private var name: String = ""
+    var placeholder: String = ""
     
     var body: some View {
     
         
         HStack {
-            TextField("Typ hier", text: $name).font(.title)
+            TextField(placeholder, text: $name).font(.title)
                 
                 
                 .keyboardType(.default)

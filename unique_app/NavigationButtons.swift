@@ -9,12 +9,25 @@
 import SwiftUI
 
 struct NavigationButtons: View {
+
+
+    
+    var nextView: AnyView = AnyView(SendItemStepTwo())
+    var previousView: AnyView = AnyView(HomeView())
+   
+    
     var body: some View {
         
 
         HStack(spacing: 80) {
             
-            ZStack {
+            
+            NavigationLink(destination: previousView.navigationBarBackButtonHidden(true).navigationBarBackButtonHidden(true)){
+            
+            
+                    ZStack {
+                
+             
                           Rectangle()
                               .fill(LinearGradient(gradient: .init(colors: [Color.colorGreen,Color.colorBlue]), startPoint: .leading, endPoint: .trailing))
                               .frame(width: 110, height: 45)
@@ -23,8 +36,15 @@ struct NavigationButtons: View {
                           
                           Text("Vorige").foregroundColor(Color.white)
                             .font(.headline)
+                
             }.opacity(0.8)
             
+            }
+            
+            
+            NavigationLink(destination: nextView.navigationBarHidden(true).navigationBarBackButtonHidden(true)){
+                 
+                 
             
             ZStack {
                 Rectangle()
@@ -36,12 +56,15 @@ struct NavigationButtons: View {
                 Text("Volgende").foregroundColor(Color.white).font(.headline)
                 
             }
+                        
+                
+            }
         }
     }
 }
 
 struct NavigationButtons_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationButtons()
+        NavigationButtons(nextView: AnyView(SendItemStepTwo()), previousView: AnyView(HomeView()))
     }
 }

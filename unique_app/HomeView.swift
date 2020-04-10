@@ -21,7 +21,7 @@ struct HomeView: View {
         
     
    
-
+        NavigationView{
         ZStack {
                
              Color.backgroundColor.edgesIgnoringSafeArea(.all)
@@ -56,9 +56,9 @@ struct HomeView: View {
                    ZStack(alignment: .bottom) {
                     
                  
-                        
+                    NavigationLink(destination: SendItemStepOne().navigationBarHidden(true).navigationBarBackButtonHidden(true)){
                         Files()
-                                                    
+                    }
                     
                       
                     BottomControls()
@@ -70,8 +70,8 @@ struct HomeView: View {
             }
             
            
-        }
-        
+        }.padding(.top, -100)
+            }.navigationBarTitle(Text(""), displayMode: .inline).navigationBarHidden(true)
         
         
             

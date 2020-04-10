@@ -34,7 +34,7 @@ struct LoginScreen: View {
                     self.status = true
                 }
             }
-            }
+            }.navigationBarTitle(Text(""), displayMode: .inline).navigationBarHidden(true)
         
     }
 }

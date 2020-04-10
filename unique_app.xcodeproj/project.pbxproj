@@ -20,7 +20,6 @@
 		C23B35CB243D2785000A8313 /* SendItemStepOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23B35CA243D2785000A8313 /* SendItemStepOne.swift */; };
 		C23B35CD243D2D6E000A8313 /* UserInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23B35CC243D2D6E000A8313 /* UserInputField.swift */; };
 		C23B35CF243D3477000A8313 /* SendItemName.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23B35CE243D3477000A8313 /* SendItemName.swift */; };
-		C242747F2440D37E00F8B87C /* SendInteractionElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C242747E2440D37E00F8B87C /* SendInteractionElement.swift */; };
 		C24274812441027800F8B87C /* ProgressCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24274802441027800F8B87C /* ProgressCircle.swift */; };
 		C2EE1E4C2434C33D0062A944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE1E4B2434C33D0062A944 /* AppDelegate.swift */; };
 		C2EE1E4E2434C33D0062A944 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE1E4D2434C33D0062A944 /* SceneDelegate.swift */; };
@@ -67,7 +66,6 @@
 		C23B35CA243D2785000A8313 /* SendItemStepOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendItemStepOne.swift; sourceTree = "<group>"; };
 		C23B35CC243D2D6E000A8313 /* UserInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputField.swift; sourceTree = "<group>"; };
 		C23B35CE243D3477000A8313 /* SendItemName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendItemName.swift; sourceTree = "<group>"; };
-		C242747E2440D37E00F8B87C /* SendInteractionElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendInteractionElement.swift; sourceTree = "<group>"; };
 		C24274802441027800F8B87C /* ProgressCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircle.swift; sourceTree = "<group>"; };
 		C2EE1E482434C33D0062A944 /* unique_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unique_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2EE1E4B2434C33D0062A944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -146,7 +144,6 @@
 				C2EE1E4F2434C33D0062A944 /* HomeView.swift */,
 				C23B35C8243D23A3000A8313 /* NavigationButtons.swift */,
 				C23B35CA243D2785000A8313 /* SendItemStepOne.swift */,
-				C242747E2440D37E00F8B87C /* SendInteractionElement.swift */,
 				60EC26CD243F269D00442D15 /* SendItemStepTwo.swift */,
 				60EC26CF243F26AD00442D15 /* SendItemStepThree.swift */,
 				C23B35CC243D2D6E000A8313 /* UserInputField.swift */,
@@ -338,7 +335,6 @@
 				C23B35CB243D2785000A8313 /* SendItemStepOne.swift in Sources */,
 				C23B35AA243737E2000A8313 /* LoginScreen.swift in Sources */,
 				C2EE1E4E2434C33D0062A944 /* SceneDelegate.swift in Sources */,
-				C242747F2440D37E00F8B87C /* SendInteractionElement.swift in Sources */,
 				C2EE1E8824351E030062A944 /* NameId.swift in Sources */,
 				C2EE1E502434C33D0062A944 /* HomeView.swift in Sources */,
 				C23B35CF243D3477000A8313 /* SendItemName.swift in Sources */,

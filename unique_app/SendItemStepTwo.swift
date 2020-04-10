@@ -1,8 +1,8 @@
 //
-//  SendItemStepTwo.swift
+//  SendItemStepOne.swift
 //  unique_app
 //
-//  Created by Xandor Naus on 09/04/2020.
+//  Created by Xandor Naus on 07/04/2020.
 //  Copyright © 2020 Validata. All rights reserved.
 //
 
@@ -14,38 +14,51 @@ struct SendItemStepTwo: View {
     var body: some View {
         
       
+        NavigationView{
+        ZStack {
+            
+            Color.backgroundColor.edgesIgnoringSafeArea(.all)
+            
+            VStack {
+            
                 
-        VStack {
-          
-            HStack {
-                SendItemName()
+                VStack{
+                    
+                    Image("logo").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).frame(width: 92, height: 35)
+                    
+                    HStack {
+                        SendItemName()
+                        Spacer()
+                        ZStack{
+                            
+                            ProgressCircle(percentage: CGFloat(33))
+                            Text("2/3").font(.system(size: 23)).fontWeight(.light).foregroundColor(Color(UIColor.label))
+                        }
+                    }.padding(.horizontal, 35.0)
+                    
+                }
+                
                 Spacer()
-            }.padding(.horizontal, 35.0).padding(.bottom, 30).padding(.top, 102.0)
-         
+                
+                ZStack(alignment: .top){
+                    
+                    ZStack(alignment: .top) {
+                              Rectangle().fill(Color.listBG).cornerRadius(20).frame(height: 600)
+                              
+                              VStack(spacing: 20) {
+                                  UserInputField(placeholder: "Typ hier het uniq ID").padding(.leading, 35.0)
+                                    NavigationButtons(nextView: AnyView(SendItemStepThree()), previousView: AnyView(SendItemStepTwo()))
+                              }.padding(.top, 100.0)
+                              
+                          }
+      
+                    Text("Wat is het uniq ID?").foregroundColor(Color(UIColor.label)).font(.largeTitle).fontWeight(.bold).padding(.top, 30.0)
+                
+                }
+            }.edgesIgnoringSafeArea(.bottom)
+        }.padding(.top, -100)
             
-            ZStack(alignment: .top) {
-                
-            
-               
-                Rectangle().fill(Color.listBG)
-                    .frame(width: UIScreen.main.bounds.width, height: 605)
-                    .cornerRadius(20)
-                  
-                
-                VStack(alignment: .leading, spacing: 20.0) {
-                    Text("Wat is het unique ID?").foregroundColor(Color(UIColor.label)).font(.largeTitle).fontWeight(.bold).padding(.bottom, 30.0)
-                    UserInputField()
-                     NavigationButtons()
-                }.padding(.leading, 35.0).padding(.top, 55.0)
-                
-           
-                
-                
-            }
-            
-          
-            
-        }.edgesIgnoringSafeArea(.all)
+        }.navigationBarTitle(Text(""), displayMode: .inline).navigationBarHidden(true)
                 
         
         
@@ -57,3 +70,4 @@ struct SendItemStepTwo_Previews: PreviewProvider {
         SendItemStepTwo()
     }
 }
+

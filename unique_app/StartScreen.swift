@@ -13,7 +13,7 @@ struct StartScreen: View {
         
       
    
-      
+        NavigationView{
         ZStack {
         
                Color.backgroundColor.edgesIgnoringSafeArea(.all)
@@ -50,7 +50,7 @@ struct StartScreen: View {
            
                
         }
-         
+        }.navigationBarTitle(Text(""), displayMode: .inline).navigationBarHidden(true)
       
     }
     

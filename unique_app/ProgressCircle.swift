@@ -12,33 +12,9 @@ extension Color {
      static let cirlceColor = Color("circleColor")
    }
 
-struct ProgressCircle: View {
-    
-   
-    
-    var body: some View {
-       
-        ZStack{
-            
-            Color.backgroundColor.edgesIgnoringSafeArea(.all)
-            
-            VStack{
-                
-                ZStack{
-                    
-                    Outline(percentage: CGFloat(99))
-                    
-                }
-                
-            }
-            
-        }
-        
-    }
-}
 
 
-struct Outline: View{
+struct ProgressCircle: View{
     var percentage: CGFloat = 0
     var color: Color = Color.colorGreen
     

@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct SendItemStepThreeo: View {
+struct SendItemStepThree: View {
     
     
     var body: some View {
@@ -52,6 +52,6 @@ struct SendItemStepThreeo: View {
 
 struct SendItemStepThree_Previews: PreviewProvider {
     static var previews: some View {
-        SendItemStepTwo()
+        SendItemStepThree()
     }
 }
