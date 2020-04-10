@@ -34,7 +34,7 @@ struct LoginScreen: View {
                     self.status = true
                 }
             }
-        }.animation(.spring())
+            }
         
     }
 }
@@ -53,15 +53,16 @@ struct Verification : View {
             
         ZStack {
             
+        
+           Color.backgroundColor.edgesIgnoringSafeArea(.all)
+           Particles().opacity(0.5)
+                
            
             
             VStack{
                         
-                HStack {
-                    Spacer()
-                    QRCode().padding(.horizontal, 25.0)
-                }.padding(.top, 40.0)
-                LogoOnStartScreen().padding(.top, 60.0)
+             
+                LogoOnStartScreen()
                         
                         
                         Spacer()
@@ -83,11 +84,10 @@ struct Verification : View {
                  
             Spacer()
                         
-            }.frame(width: UIScreen.main.bounds.width).background(Color.backgroundColor).edgesIgnoringSafeArea(.all)
+            }
         
                 
-            
-            Particles().opacity(0.5)
+       
         
         }
         

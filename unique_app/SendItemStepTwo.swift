@@ -34,7 +34,7 @@ struct SendItemStepTwo: View {
                 
                 VStack(alignment: .leading, spacing: 20.0) {
                     Text("Wat is het unique ID?").foregroundColor(Color(UIColor.label)).font(.largeTitle).fontWeight(.bold).padding(.bottom, 30.0)
-                    NumberInputField()
+                    UserInputField()
                      NavigationButtons()
                 }.padding(.leading, 35.0).padding(.top, 55.0)
                 

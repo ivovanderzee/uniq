@@ -14,52 +14,69 @@ extension Color {
 }
 
 struct HomeView: View {
- 
+    
+    @State var status = false
     
     var body: some View {
         
     
-        
-      
-       
-            VStack {
-                ZStack {
-                    Image("logo")
-                        .resizable()
-                        .renderingMode(.original)
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 92, height: 35)
-                        .padding(.bottom, 20)
-                    
-                    
-                    HStack {
-                        
-                      MenuIcon()
-                      Spacer()
-                      QRCode()
-                     
-                    }.padding(.horizontal)
-                }.padding(.top, 40.0)
-                
+   
+
+        ZStack {
                
+             Color.backgroundColor.edgesIgnoringSafeArea(.all)
+            
+            VStack {
+                   
+                    VStack {
+                        ZStack {
+                            Image("logo")
+                                .resizable()
+                                .renderingMode(.original)
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 92, height: 35)
+                              
+                            
+                            
+                            HStack {
+                                
+                              MenuIcon()
+                              Spacer()
+                              QRCode()
+                             
+                            }.padding(.horizontal)
+                        }
+                        
+                         NameId()
+                        
+                    }
                     
-                    NameId()
-                
-        
-                ZStack(alignment: .bottom) {
                     
-                    Files()
+                    
+                   ZStack(alignment: .bottom) {
+                    
+                 
+                        
+                        Files()
+                                                    
+                    
+                      
+                    BottomControls()
+                           
+                    }.padding(.top, 36.0).edgesIgnoringSafeArea(.bottom)
                    
                     
-                    BottomControls()
-                       
-                }
-                    .padding(.top, 36.0)
-                .edgesIgnoringSafeArea(.bottom)
-               
-            }.background(Color.backgroundColor)
-                .edgesIgnoringSafeArea(.top)
+                    
+            }
+            
+           
         }
+        
+        
+        
+            
+        }
+    
 }
 
 struct Home_Previews: PreviewProvider {

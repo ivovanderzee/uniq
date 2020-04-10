@@ -28,6 +28,9 @@ struct Files: View {
             VStack(alignment: .leading, spacing: 20.0) {
             
             
+               
+                             
+                
             HStack(alignment: .center, spacing: 35.0) {
                 Image("ID")
                 .resizable()
@@ -50,6 +53,8 @@ struct Files: View {
                 .cornerRadius(10)
               .shadow(radius: 5)
             .padding(.horizontal, 12.0)
+                                
+                
             
             
             HStack(alignment: .center, spacing: 35.0) {

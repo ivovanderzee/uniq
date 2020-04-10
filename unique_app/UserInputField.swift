@@ -16,7 +16,7 @@ struct UserInputField: View {
     
         
         HStack {
-            TextField("Typ hier de naam", text: $name).font(.title)
+            TextField("Typ hier", text: $name).font(.title)
                 
                 
                 .keyboardType(.default)

@@ -34,8 +34,7 @@ struct SubmitButton: View {
             
               }) {
                 
-                NavigationLink(destination: LoginScreen().navigationBarBackButtonHidden(true)
-                .navigationBarHidden(true)) {
+             
                
         
                 ZStack {
@@ -58,7 +57,7 @@ struct SubmitButton: View {
                     .foregroundColor(Color.white)
                 
                 
-                    }
+                    
             
                     
                 }.opacity(0.7)

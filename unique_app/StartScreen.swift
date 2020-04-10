@@ -11,12 +11,13 @@ import SwiftUI
 struct StartScreen: View {
     var body: some View {
         
-        NavigationView{
+      
    
       
         ZStack {
         
-               
+               Color.backgroundColor.edgesIgnoringSafeArea(.all)
+               Particles().opacity(0.5)
           
             VStack(alignment: .center, spacing: -5) {
                 
@@ -36,20 +37,21 @@ struct StartScreen: View {
                 Text("Tip: beveilig je accounts altijd met een two way verification").frame(width: 240).padding(.bottom, 30.0)
                 
                 
-                
+                NavigationLink(destination: LoginScreen().navigationBarBackButtonHidden(true)
+                             .navigationBarHidden(true)) {
                 
                 SubmitButton()
                     
+                }
                 
-            }.background(Color.backgroundColor).edgesIgnoringSafeArea(.all)
+            }.edgesIgnoringSafeArea(.bottom)
         
-            Particles().padding(.bottom, 80.0)
+        
            
                
         }
          
-        }.navigationBarHidden(true)
-        .navigationBarBackButtonHidden(true)
+      
     }
     
 }
