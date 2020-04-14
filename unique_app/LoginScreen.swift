@@ -130,7 +130,7 @@ struct NumberPad : View {
                                     
                                     NotificationCenter.default.post(name: NSNotification.Name("Success"), object: nil)
                                     
-                                    self.codes.removeAll()
+                                   
                                 }
                             }
                             

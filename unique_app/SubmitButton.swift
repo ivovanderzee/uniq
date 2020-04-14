@@ -27,12 +27,7 @@ struct SubmitButton: View {
      
       
         
-        Button(action: {
-            
-    
-         
-            
-              }) {
+   
                 
             
                 ZStack {
@@ -55,11 +50,11 @@ struct SubmitButton: View {
                     .foregroundColor(Color.white)
                 
                 
-                    }
+                    }.opacity(0.7)
+                    .shadow(radius: 10)
             
                     
-                }.opacity(0.7)
-                    .shadow(radius: 10)
+             
                 
                    
     
