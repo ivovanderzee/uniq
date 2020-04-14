@@ -47,23 +47,27 @@ struct HomeView: View {
                             }.padding(.horizontal)
                         }
                         
-                         NameId()
+                        NameId().padding(.top, 15.0)
                         
                     }
                     
                     
                     
-                   ZStack(alignment: .bottom) {
+                ZStack(alignment: .bottom) {
                     
                  
                  
                         Files()
                     
-                    
+                  Rectangle()
+                                                   .fill(LinearGradient(gradient: .init(colors: [Color.bottomGradient1,Color.bottomGradient2]), startPoint: .bottom, endPoint: .top))
+                    .frame(width: UIScreen.main.bounds.width, height: 250)
                       
-                    BottomControls()
+                    BottomControls().padding(.bottom, 40.0)
+                    
+                    
                            
-                    }.padding(.top, 36.0).edgesIgnoringSafeArea(.bottom)
+                    }.padding(.top, 10.0).edgesIgnoringSafeArea(.bottom)
                    
                     
                     

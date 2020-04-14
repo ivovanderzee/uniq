@@ -28,11 +28,7 @@ struct BottomControls: View {
         ZStack {
             
             
-            Rectangle()
-                .fill(LinearGradient(gradient: .init(colors: [Color.bottomGradient1,Color.bottomGradient2]), startPoint: .bottom, endPoint: .top))
-                .frame(width: UIScreen.main.bounds.width, height: 140)
-               
-            
+    
             
             Button(action: {
                                 
@@ -78,7 +74,7 @@ struct BottomControls: View {
                                                      
                             .fill(Color.buttonColor)
                             .cornerRadius(15)
-                            .frame(width: 80, height: 5)
+                            .frame(width: 40, height: 5)
                             .padding(.top, -10.0)
                 }
                 
@@ -98,7 +94,7 @@ struct BottomControls: View {
                                                                                
                                    .fill(Color.buttonColor)
                                    .cornerRadius(15)
-                                   .frame(width: 80, height: 5)
+                                   .frame(width: 40, height: 5)
                                    .padding(.top, -10.0)
                                     
                                }
