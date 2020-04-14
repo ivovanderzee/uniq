@@ -31,11 +31,12 @@ struct NameId: View {
             
             ZStack {
             
-            Image("UNIQUE_ID")
-            .resizable()
-            .renderingMode(.original)
-            .aspectRatio(contentMode: .fill)
-            .frame(width: 45, height: 45)
+                Rectangle().fill(LinearGradient(gradient: .init(colors: [Color.colorGreen,Color.colorBlue]), startPoint: .leading, endPoint: .trailing))
+                    .frame(width: 140, height: 45)
+                    .cornerRadius(22)
+                
+           
+            
             
             
             Text("8ucv4tx3kp0")
@@ -46,7 +47,7 @@ struct NameId: View {
         }
         .opacity(0.8)
         .cornerRadius(10.0)
-        .padding(-15)
+            .padding(.top, -15)
             
         
     }

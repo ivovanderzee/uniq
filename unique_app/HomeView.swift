@@ -56,9 +56,9 @@ struct HomeView: View {
                    ZStack(alignment: .bottom) {
                     
                  
-                    NavigationLink(destination: SendItemStepOne().navigationBarHidden(true).navigationBarBackButtonHidden(true)){
+                 
                         Files()
-                    }
+                    
                     
                       
                     BottomControls()

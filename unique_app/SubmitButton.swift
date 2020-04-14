@@ -34,9 +34,7 @@ struct SubmitButton: View {
             
               }) {
                 
-             
-               
-        
+            
                 ZStack {
                     
                     
@@ -57,7 +55,7 @@ struct SubmitButton: View {
                     .foregroundColor(Color.white)
                 
                 
-                    
+                    }
             
                     
                 }.opacity(0.7)
@@ -69,11 +67,11 @@ struct SubmitButton: View {
             
      
         
-    }
+}
 
 struct SubmitButton_Previews: PreviewProvider {
     static var previews: some View {
         SubmitButton()
     }
 }
-}
+

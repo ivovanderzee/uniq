@@ -29,7 +29,8 @@ struct Files: View {
             
             
                
-                             
+            NavigationLink(destination: SendItemStepOne().navigationBarHidden(true).navigationBarBackButtonHidden(true)){
+
                 
             HStack(alignment: .center, spacing: 35.0) {
                 Image("ID")
@@ -54,7 +55,11 @@ struct Files: View {
               .shadow(radius: 5)
             .padding(.horizontal, 12.0)
                                 
+            }.foregroundColor(Color(UIColor.label))
                 
+                
+                
+                NavigationLink(destination: SendItemStepOne().navigationBarHidden(true).navigationBarBackButtonHidden(true)){
             
             
             HStack(alignment: .center, spacing: 35.0) {
@@ -79,8 +84,14 @@ struct Files: View {
             .cornerRadius(10)
                 .shadow(radius: 5)
             .padding(.horizontal, 12.0)
-                       
-    
+                
+                }.foregroundColor(Color(UIColor.label))
+                    
+                    
+                    
+                    
+        NavigationLink(destination: SendItemStepOne().navigationBarHidden(true).navigationBarBackButtonHidden(true)){
+        
                                   HStack(alignment: .center, spacing: 35.0) {
                                            Image("RB")
                                            .resizable()
@@ -104,7 +115,10 @@ struct Files: View {
               .shadow(radius: 5)
             .padding(.horizontal, 12.0)
                                
-            
+        }.foregroundColor(Color(UIColor.label))
+                
+                
+                    NavigationLink(destination: SendItemStepOne().navigationBarHidden(true).navigationBarBackButtonHidden(true)){
             
                 HStack(alignment: .center, spacing: 35.0) {
                                           Image("PP")
@@ -129,7 +143,12 @@ struct Files: View {
               .shadow(radius: 5)
             .padding(.horizontal, 12.0)
 
+                        
+                        }.foregroundColor(Color(UIColor.label))
             
+                
+                   NavigationLink(destination: SendItemStepOne().navigationBarHidden(true).navigationBarBackButtonHidden(true)){
+                
             HStack(alignment: .center, spacing: 35.0) {
                                                   Image("BP")
                                                   .resizable()
@@ -156,7 +175,7 @@ struct Files: View {
                 
                                               
                       
-
+                    }.foregroundColor(Color(UIColor.label))
 
             }.frame(width: UIScreen.main.bounds.width)
                 .padding(.top, 20.0)

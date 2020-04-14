@@ -43,17 +43,15 @@ struct BottomControls: View {
                                     
                 ZStack {
                     
-                    Image("add_button")
-                        .resizable()
-                        .renderingMode(.original)
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 65, height: 65)
+                    
+                    Rectangle()  .fill(LinearGradient(gradient: .init(colors: [Color.colorGreen,Color.colorBlue]), startPoint: .leading, endPoint: .trailing))
+                                                           .frame(width: 65, height: 65)
+                        .cornerRadius(100)
+                    
+                   
                     
                     
-                    Text("+")
-                    .foregroundColor(.white)
-                        .font(.system(size: 35, weight: .heavy))
-                        .multilineTextAlignment(.center)
+                    Image(systemName: "plus").foregroundColor(.white).frame(width: 30, height: 30).font(.title)
                     
                     
                 }

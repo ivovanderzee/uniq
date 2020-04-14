@@ -37,8 +37,7 @@ struct StartScreen: View {
                 Text("Tip: beveilig je accounts altijd met een two way verification").frame(width: 240).padding(.bottom, 30.0)
                 
                 
-                NavigationLink(destination: LoginScreen().navigationBarBackButtonHidden(true)
-                             .navigationBarHidden(true)) {
+                
                 
                 SubmitButton()
                     
@@ -49,10 +48,11 @@ struct StartScreen: View {
         
            
                
-        }
         }.navigationBarTitle(Text(""), displayMode: .inline).navigationBarHidden(true)
+        }
+    
       
-    }
+    
     
 }
 
