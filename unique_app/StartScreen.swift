@@ -19,7 +19,7 @@ struct StartScreen: View {
                Color.backgroundColor.edgesIgnoringSafeArea(.all)
                Particles().opacity(0.5)
           
-            VStack(alignment: .center, spacing: -5) {
+            VStack(alignment: .center, spacing: 10) {
                 
                 
                 LogoOnStartScreen().padding(.top, 230)
@@ -37,9 +37,10 @@ struct StartScreen: View {
                 Text("Tip: beveilig je accounts altijd met een two way verification").frame(width: 240).padding(.bottom, 30.0)
                 
                 
+                NavigationLink(destination: LoginScreen()){
                 
-                
-                SubmitButton()
+                SubmitButton().padding(.bottom, 70.0)
+                }
                     
                 }
                 

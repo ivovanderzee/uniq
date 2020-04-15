@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
         // Create the SwiftUI view that provides the window contents.
-        let startView = LoginScreen()
+        let startView = StartScreen()
         
         
         
